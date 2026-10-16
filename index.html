@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンビグラムハクブツカン | AMBIGRAM MUSEUM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Noto+Serif+JP:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">A</div>
+                <div>
+                    <span class="logo-text-ja">アンビグラムハクブツカン</span>
+                    <span class="logo-text-en">AMBIGRAM MUSEUM</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">概要・歴史</a></li>
+                <li><a href="#gallery" class="nav-link">展示室</a></li>
+                <li><a href="#types" class="nav-link">分類</a></li>
+                <li><a href="#lab" class="nav-link">体験ラボ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <span class="hero-badge">CHANGE YOUR PERSPECTIVE, AND THE WORLD CHANGES.</span>
+                <h1 class="hero-title">視点を変えれば、<br><span class="gold-gradient-text">世界は反転する。</span></h1>
+
+                <div class="hero-ambigram-box">
+                    <div class="hero-ambigram-card" id="heroCard">
+                        <img class="hero-ambigram-svg" src="images/ambigram_museum.jpg" alt="Ambigram museum artwork">
+                    </div>
+                </div>
+
+                <p class="hero-description">
+                    回転、反転、あるいは認識の変換。アンビグラムはひとつのグラフィックの中に複数の意味や言葉を織り込む「文字の錯視芸術」です。変わり続ける知の空間をお楽しみください。
+                </p>
+
+                <a href="#gallery" class="btn-primary">
+                    <span>展示室を鑑賞する</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header">
+                <span class="section-subtitle">ABOUT AMBIGRAM</span>
+                <h2 class="section-title">アンビグラムの美学と歴史</h2>
+            </div>
+
+            <div class="about-grid">
+                <article class="about-card gold-border">
+                    <div class="about-icon"><i class="fa-solid fa-rotate"></i></div>
+                    <h3>回転と対称性の知解</h3>
+                    <p>アンビグラム（Ambigram）は、ラテン語の「ambi（両方の）」とギリシャ語の「gram（文字）」に由来します。描かれた文字や図形が、異なる視点や角度からでも独立した意味を持って認識できる視覚効果です。</p>
+                </article>
+
+                <article class="about-card gold-border">
+                    <div class="about-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>脳を揺さぶるゲシュタルト錯視</h3>
+                    <p>人間の脳は、文字のパターン認識において無意識の補完を行います。アンビグラムデザイナーは文字の骨格（ストローク）を巧みに共有・再構築し、ひとつのデザインに二重の解釈を持たせます。</p>
+                </article>
+
+                <article class="about-card gold-border">
+                    <div class="about-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+                    <h3>現代カルチャーと芸術</h3>
+                    <p>ダグラス・ホフスタッターやスコット・キムらによって発展し、ダン・ブラウンの小説『天使と悪魔』で世界的に脚光を浴びました。今日ではタイポグラフィ、ロゴ、タトゥーなどで親しまれています。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="section-header">
+                <span class="section-subtitle">EXHIBITION ROOM</span>
+                <h2 class="section-title">展示室（メインギャラリー）</h2>
+                <p class="gallery-note">※画像カードにカーソルを乗せる（スマホはタップする）と、180度滑らかに回転して別の文字・解釈へ変化します。</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </section>
+
+        <section id="types">
+            <div class="section-header">
+                <span class="section-subtitle">CLASSIFICATION</span>
+                <h2 class="section-title">アンビグラムの主要分類</h2>
+            </div>
+
+            <div class="types-grid">
+                <article class="type-card gold-border">
+                    <span class="type-number">01</span>
+                    <h3 class="type-title"><i class="fa-solid fa-rotate-right"></i> 180度回転型 (Rotational)</h3>
+                    <p class="type-copy">最も一般的な形式。作品を平面上で180度回転させた際に、元の言葉と同じ（または別の）言葉として解釈できるデザイン。</p>
+                    <div class="type-illustration">
+                        <span class="rotate-sample">回転 ⇄ 回転</span>
+                    </div>
+                </article>
+
+                <article class="type-card gold-border">
+                    <span class="type-number">02</span>
+                    <h3 class="type-title"><i class="fa-solid fa-left-right"></i> 鏡像反転型 (Mirror / Axial)</h3>
+                    <p class="type-copy">垂直方向または水平方向の軸を基準として、鏡に映した（左右反転・上下反転）状態でも正しく読める構造。</p>
+                    <div class="type-illustration">
+                        <span class="mirror-sample">MIRROR</span>
+                    </div>
+                </article>
+
+                <article class="type-card gold-border">
+                    <span class="type-number">03</span>
+                    <h3 class="type-title"><i class="fa-solid fa-circle-half-stroke"></i> 図地反転型 (Figure-Ground)</h3>
+                    <p class="type-copy">文字を描く線（図）だけでなく、文字と文字の間の余白（地）のネガティブスペースに別の文字を成立させる技法。</p>
+                    <div class="type-illustration">
+                        <span class="figure-ground-sample">図地反転</span>
+                    </div>
+                </article>
+
+                <article class="type-card gold-border">
+                    <span class="type-number">04</span>
+                    <h3 class="type-title"><i class="fa-solid fa-code-compare"></i> 共生型 (Symbiotogram)</h3>
+                    <p class="type-copy">正位置で「単語A」として読み取れ、180度回転させると全く無関係な「単語B」へ劇的に読み方が変化する型。</p>
+                    <div class="type-illustration">
+                        <span>「光」 ⇄ 「影」</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="lab">
+            <div class="section-header">
+                <span class="section-subtitle">INTERACTIVE EXPERIMENT</span>
+                <h2 class="section-title">アンビグラム体験コーナー (Interactive Lab)</h2>
+            </div>
+
+            <div class="lab-container">
+                <div class="lab-tabs">
+                    <button class="lab-tab-btn active" id="tabTextBtn" type="button">
+                        <i class="fa-solid fa-font"></i> テキスト180°回転シミュレーター
+                    </button>
+                    <button class="lab-tab-btn" id="tabCanvasBtn" type="button">
+                        <i class="fa-solid fa-pen-nib"></i> アンビグラム手書きキャンバス
+                    </button>
+                </div>
+
+                <div class="tab-panel active" id="panelText">
+                    <div class="sim-input-group">
+                        <div class="sim-field">
+                            <label for="simTextInput">変換テキストを入力</label>
+                            <input type="text" id="simTextInput" value="AMBIGRAM" class="sim-input" placeholder="文字を入力...">
+                        </div>
+                        <div class="sim-field">
+                            <label for="simFontSelect">フォントスタイルの選択</label>
+                            <select id="simFontSelect" class="sim-select">
+                                <option value="'Cinzel', serif">Cinzel (古典英文)</option>
+                                <option value="'Noto Serif JP', serif">Noto Serif (明朝体)</option>
+                                <option value="sans-serif">Sans-serif (ゴシック)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="sim-preview-box">
+                        <div class="sim-text-target" id="simTextTarget">AMBIGRAM</div>
+                    </div>
+
+                    <div class="sim-actions">
+                        <button class="btn-secondary" id="btnSimRotate" type="button"><i class="fa-solid fa-rotate-right"></i> 180° 回転</button>
+                        <button class="btn-secondary" id="btnSimMirror" type="button"><i class="fa-solid fa-left-right"></i> 左右反転</button>
+                        <button class="btn-secondary" id="btnSimReset" type="button"><i class="fa-solid fa-arrow-rotate-left"></i> リセット</button>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="panelCanvas">
+                    <p class="canvas-helper">左側のキャンバスに線を描くと、180度回転された状態で右側キャンバスにも同時同期描画されます。</p>
+
+                    <div class="canvas-grid">
+                        <div class="canvas-box">
+                            <label>【入力描画キャンバス】</label>
+                            <canvas id="drawCanvas" width="300" height="240"></canvas>
+                        </div>
+                        <div class="canvas-box">
+                            <label>【180° 同期回転プレビュー】</label>
+                            <canvas id="previewCanvas" width="300" height="240"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="sim-actions canvas-actions">
+                        <button class="btn-secondary" id="btnClearCanvas" type="button"><i class="fa-solid fa-trash"></i> キャンバス消去</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="footer-logo">アンビグラムハクブツカン</a>
+            <p class="footer-text">
+                当館は文字の対称性と視覚心理学が織りなすアンビグラム芸術の探求空間です。<br>
+            </p>
+            <div class="copyright">&copy; 2026 AMBIGRAM MUSEUM. ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
